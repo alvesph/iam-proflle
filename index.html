@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Didact+Gothic&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-stories.css">
   <title>I'm</title>
   <link rel="icon" 
       type="image/png" 
@@ -17,13 +18,13 @@
     <div class="Container">
       <div class="iam"><a href="/">Iam</a></div>
       <div class="box-picture">
-        <div><img src="/img/CODING.png"></div>
+
       </div>
       <div class="box-description">
         <div class="box">
           <div id="apresentation">
             <div id="myPic">
-              <img src="/img/perfil3.png">
+              <img id="perfil" src="/img/perfil3.png">
             </div>
             <div id="apresentation-name">
               <div><h3>PAULO H. ALVES</h3></div>
@@ -44,37 +45,58 @@
             </div>
             <div id="aspasD"><img src="/img/aspasD.png"></div>
           </div>
-          <div id="description-job">
-            <div>
-              <div>Empresa</div>
-              <div><h3>Freelance</h3></div>
+          <div class="desc">
+            <div id="description-job">
+              <div>
+                <div>Empresa</div>
+                <div><h3>Freelance</h3></div>
+              </div>
+              <div>
+                <div>Local</div>
+                <div><h3>Rua tal, 1912 Peras</h3></div>
+              </div>
             </div>
-            <div>
-              <div>Local</div>
-              <div><h3>Rua tal, 1912 Peras</h3></div>
+            <div class="description-site">
+              <div id="site">
+                <div>Site</div>
+                <div><a href="https://alvesph.github.io"><h3>alvesph.github.io</h3></a></div>
+              </div>
+              <div id="phone">
+                <div>Telefone</div>
+                <div><h3>(69)9 99364-7681</h3></div>
+              </div>
             </div>
-          </div>
-          <div class="description-site">
-            <div id="site">
-              <div>Site</div>
-              <div><a href="https://alvesph.github.io"><h3>alvesph.github.io</h3></a></div>
-            </div>
-            <div id="phone">
-              <div>Telefone</div>
-              <div><h3>(69)9 99364-7681</h3></div>
-            </div>
-          </div>
-          <div class="redes">
-            <div>Visite minhas Redes</div>
-            <div>
-              <img src="/img/redes/facebook.png">
-              <img src="/img/redes/instagram.png">
-              <img src="/img/redes/whatsapp.png">
+            <div class="redes">
+              <div>Visite minhas Redes</div>
+              <div>
+                <img src="/img/redes/facebook.png">
+                <img src="/img/redes/instagram.png">
+                <img src="/img/redes/whatsapp.png">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div id="modal-story" class="modal-container">
+    <div id="modal-story" class="modal">
+      <div data-slide="slide" class="slide">
+        <button class="close">x</button>
+        <div class="slide-items">
+          <img src="/img/perfil3.png" alt="Img 1">
+          <img src="/img/CODING.png" alt="Img 2">
+        </div>
+        <nav class="slide-nav">
+          <div class="slide-thumb"></div>
+          <button class="slide-prev">Anterior</button>
+          <button class="slide-next">Próximo</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/js/story.js"></script>
 </body>
 </html>
