@@ -322,6 +322,11 @@ section {
     height: 100%;
   }
 
+  #apresentation {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
   .desc {
     width: 50%;
     height: 40%;
