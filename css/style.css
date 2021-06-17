@@ -49,6 +49,22 @@ section {
 
 }
 
+.iam {
+  width: 90%;
+  max-width: var(--maxWidth);
+  position: absolute;
+  margin-top: .5rem;
+  top: 0;
+  z-index: 1000;
+}
+
+.iam > a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+}
+
 .box-picture {
   width: 60%;
   height: 100%;
@@ -75,7 +91,7 @@ section {
   justify-content: center;
   align-items: center;
 
-  border: solid;
+  border: solid var(--colorBackground);
 }
 
 .box-description {
@@ -93,6 +109,7 @@ section {
 
 .box > div {
   margin-bottom: 1rem;
+  transition: .5s ease;
 }
 
 .box {
@@ -173,9 +190,21 @@ section {
 }
 
 #description-job {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
+}
+
+.description-site {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.description-site > div > div > a {
+  text-decoration: none;
+  color: var(--colorBackground);
 }
 
 .redes {
@@ -223,6 +252,10 @@ section {
     position: relative;
     bottom: 20px;
   }
+
+  .box > div {
+    margin-bottom: .5rem;
+  }
   
   #apresentation {
     flex-wrap: wrap;
@@ -260,6 +293,10 @@ section {
     height: 100%;
   }
 
+  .box > div {
+    margin-bottom: .5rem;
+  }
+
   #apresentation {
     flex-direction: row;
     justify-content: center;
@@ -275,12 +312,36 @@ section {
   width: 100%;
   height: 30px;
   display: flex;
+  border-radius: 5px;
+  color: white;
+  gap: .3rem;
+
+}
+
+#date {
+  width: 80%;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color: white;
 
-  background-color: brown;
+  background-color: var(--colorBackground);
+}
+
+#share {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid .1rem var(--colorBackground);
+
+
+}
+
+#share > img {
+  width: 20px;
+  height: 20px;
 }
 
 button {
