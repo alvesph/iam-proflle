@@ -163,7 +163,20 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: .5rem;
   transition: .5s;
+}
+
+#share {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share > img {
+  width: 20px;
+  height: 20px;
 }
 
 #description-text {
@@ -279,11 +292,6 @@ section {
     height: 100%;
   }
 
-  .iam {
-    width: 100%;
-    background: rgb(0, 0, 0, .5)
-  }
-
   .iam > a{
     margin-left: 12px;
     font-size: 1.7em;
@@ -306,49 +314,78 @@ section {
   .box {
     width: 95%;
     height: 100%;
+  }
+
+  #container01 {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
     position: relative;
   }
   
   #apresentation {
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: row;
     width: 100%;
-    height: 15%;
-    position: relative;
+    align-items: center;
+    position: absolute;
     top: -20px;
+    justify-content: center;
+
   }
 
   #myPic {
     display: flex;
+    height: 100%;
     width: 30%;
+    align-items: center;
+    justify-content: center;
   }
 
   #apresentation-name {
     display: flex;
-    width: 70%;
+    height: 100%;
+    width: 50%;
+  }
+
+  #share {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #share > img {
+    width: 20px;
+    height: 20px;
   }
 
   #myPic > img {
+    display: flex;
     width: 80px;
     height: 80px;
-    border: solid;
-    position: relative;
-    border-color: seashell;
   }
 
   #schedule {
+    display: flex;
+    width: 100%;
     height: 100%;
+    align-items: center;
   }
 
   #schedule > div {
-    height: 80%;
+    width: 100%;
+    height: 90%;
   }
 
   #description-text {
-    height: 70%;
+    height: 60%;
   }
 
   .description {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,10 +393,11 @@ section {
   }
 
   .description-job {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 50%;
   }
 
   .redes {
@@ -367,10 +405,9 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     width: 100%;
-    height: 30%;
-    margin-bottom: 2rem;
+    height: 100%;
   }
 
   .video {
@@ -398,6 +435,13 @@ section {
     align-items: flex-start;
   }
 
+  .redes {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
 }
 
 @media (max-height: 540px) and (max-width: 1080px){
@@ -406,8 +450,37 @@ section {
   }
 
   #apresentation {
+    width: 100%;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #myPic {
+    display: flex;
+    width: 33%;
+  }
+
+  #myPic > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #apresentation-name {
+    display: flex;
+    width: 47%;
+  }
+
+  #share {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #schedule > div {
+    width: 100%;
   }
 
   .redes {
@@ -417,6 +490,7 @@ section {
     left: 20px;
     color: seashell;
     border-radius: 15px;
+    flex-direction: row;
   }
 
   .description-job {
@@ -438,6 +512,10 @@ section {
   color: white;
 }
 
+#schedule > div {
+  width: 100%;
+}
+
 #date {
   width: 80%;
   height: 100%;
@@ -449,15 +527,3 @@ section {
   background-color: var(--colorBackground);
 }
 
-#share {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#share > img {
-  width: 25px;
-  height: 25px;
-}
