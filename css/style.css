@@ -188,6 +188,14 @@ section {
   bottom: 10px;
 }
 
+#aspasE > img {
+  width: 15px;
+}
+
+#aspasD > img {
+  width: 15px;
+}
+
 #aspasD {
   width: 90%;
   display: flex;
@@ -239,7 +247,7 @@ section {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .redes > div {
@@ -396,13 +404,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  border: solid .1rem var(--colorBackground);
-
-
 }
 
 #share > img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
