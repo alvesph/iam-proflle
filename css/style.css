@@ -79,7 +79,7 @@ section {
 
 .video {
   width: 95%;
-  height: 95%;
+  height: 60%;
 }
 
 .box-description {
@@ -95,19 +95,24 @@ section {
   background-color: seashell;
 }
 
-.box > div {
-  margin-bottom: 1rem;
-  transition: .5s ease;
-}
-
 .box {
   width: 95%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   transition: .5s;
+}
 
+.box > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: .5s ease;
 }
 
 #apresentation {
@@ -163,12 +168,14 @@ section {
 
 #description-text {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   border-radius: 12px 0px;
+  position: relative;
 
   background-color: rgb(233, 224, 224);
 }
@@ -176,6 +183,7 @@ section {
 
 #text {
   width: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,8 +192,8 @@ section {
 #aspasE {
   width: 90%;
   display: flex;
-  position: relative;
-  bottom: 10px;
+  position: absolute;
+  top: -8px;
 }
 
 #aspasE > img {
@@ -201,8 +209,8 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  top: 10px;
+  position: absolute;
+  bottom: -8px;
 }
 
 .description {
@@ -214,6 +222,10 @@ section {
   align-items: center;
   transition: .5s ease;
   gap: 2px;
+}
+
+#text {
+  margin: .8rem;
 }
 
 .description-job {
@@ -267,6 +279,16 @@ section {
     height: 100%;
   }
 
+  .iam {
+    width: 100%;
+    background: rgb(0, 0, 0, .5)
+  }
+
+  .iam > a{
+    margin-left: 12px;
+    font-size: 1.7em;
+  }
+
   .box-picture {
     width: 100%;
     height: 30%;
@@ -278,39 +300,32 @@ section {
     width: 100%;
     height: 70%;
     justify-content: center;
-
     border-radius: 0 0 12px 12px;
   }
 
   .box {
     width: 95%;
     height: 100%;
-    justify-content: flex-start;
     position: relative;
-    bottom: 20px;
-  }
-
-  .box > div {
-    margin-bottom: .5rem;
   }
   
   #apresentation {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    height: 15%;
+    position: relative;
+    top: -20px;
   }
 
   #myPic {
     display: flex;
     width: 30%;
-    margin-bottom: 0;
-
   }
 
   #apresentation-name {
     display: flex;
     width: 70%;
-    margin-top: 10px;
   }
 
   #myPic > img {
@@ -318,9 +333,44 @@ section {
     height: 80px;
     border: solid;
     position: relative;
-    bottom: 10px;
     border-color: seashell;
+  }
 
+  #schedule {
+    height: 100%;
+  }
+
+  #schedule > div {
+    height: 80%;
+  }
+
+  #description-text {
+    height: 70%;
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .description-job {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+  }
+
+  .redes {
+    width: 100%;
+    height: 30%;
+    margin-bottom: .6rem;
+  }
+
+  .video {
+    width: 95%;
+    height: 95%;
   }
 
 }
@@ -345,7 +395,7 @@ section {
 
 }
 
-@media (max-height: 500px) and (max-width: 1080px){
+@media (max-height: 540px) and (max-width: 1080px){
   .Container {
     height: 100%;
   }
@@ -355,17 +405,17 @@ section {
     justify-content: center;
   }
 
-  .description {
-    width: 50%;
-    height: 40%;
+  .redes {
+    width: 40%;
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     left: 20px;
-    gap: .5rem;
-    align-items: initial;
     color: seashell;
-    background-color: rgb(0, 0, 0, 0.9);
     border-radius: 15px;
+  }
+
+  .description-job {
+    display: none;
   }
 
   .redes > div > img {
@@ -373,24 +423,19 @@ section {
     border-radius: 50%;
     border: solid .5px seashell;
   }
-
-  .video:hover .description{
-    display: none;
-  }
 }
 
 #schedule {
   width: 100%;
-  height: 30px;
+  height: 20%;
   display: flex;
   border-radius: 5px;
   color: white;
-  gap: .3rem;
-
 }
 
 #date {
   width: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,6 +446,7 @@ section {
 
 #share {
   width: 20%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
