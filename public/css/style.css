@@ -271,13 +271,15 @@ section {
 .redes {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 2rem;
+  gap: 1rem;
 }
 
 .redes > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
 }
 
