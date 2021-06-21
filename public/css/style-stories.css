@@ -1,8 +1,14 @@
-img {
-  /*height: 100%;*/
-  max-width: 100%;
+.slide-items > img {
+  width: 100%;
+  height: 100%;
   display: block;
   transition: .5s;
+}
+
+@media (min-width: 600px) {
+  .slide-items > img {
+    max-width: 500px;
+  }
 }
 
 .modal-container {
@@ -16,7 +22,7 @@ img {
   left: 0px;
   z-index: 2000;
 
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.9);
 }
 
 .modal-container.view {
@@ -48,8 +54,9 @@ img {
 }
 
 .close {
+  display: none;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 5px;
   width: 35px;
   height: 35px;
@@ -64,10 +71,8 @@ img {
 
 .slide {
   height: 100%;
-
   margin: 20px auto;
   display: grid;
-  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
 }
 
 .slide-items {

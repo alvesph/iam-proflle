@@ -504,6 +504,10 @@ section {
     border-radius: 50%;
     border: solid .5px seashell;
   }
+
+  #modal-story {
+    display: none;
+  }
 }
 
 #schedule {
